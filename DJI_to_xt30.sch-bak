@@ -1,0 +1,90 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x10_Male J1
+U 1 1 5FE94445
+P 4350 1050
+F 0 "J1" V 4185 978 50  0000 C CNN
+F 1 "Conn_01x10_Male" V 4276 978 50  0000 C CNN
+F 2 "DJI_BATTERY_CONN:JST_EH_B10B-EH-A_1x10_P2.50mm_Vertical" H 4350 1050 50  0001 C CNN
+F 3 "~" H 4350 1050 50  0001 C CNN
+	1    4350 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 1250 3950 1250
+Connection ~ 3950 1250
+Wire Wire Line
+	3950 1250 4000 1250
+Connection ~ 4050 1250
+Wire Wire Line
+	4050 1250 4150 1250
+Wire Wire Line
+	4750 1250 4650 1250
+Connection ~ 4550 1250
+Wire Wire Line
+	4550 1250 4450 1250
+Connection ~ 4650 1250
+Wire Wire Line
+	4650 1250 4600 1250
+$Comp
+L Connector:Conn_01x02_Female J2
+U 1 1 5FE95C0C
+P 4350 1750
+F 0 "J2" V 4196 1798 50  0000 L CNN
+F 1 "Conn_01x02_Female" V 4287 1798 50  0000 L CNN
+F 2 "DJI_BATTERY_CONN:XT-30_female" H 4350 1750 50  0001 C CNN
+F 3 "~" H 4350 1750 50  0001 C CNN
+	1    4350 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 1550 4600 1550
+Wire Wire Line
+	4600 1550 4600 1250
+Connection ~ 4600 1250
+Wire Wire Line
+	4600 1250 4550 1250
+Wire Wire Line
+	4250 1550 4000 1550
+Wire Wire Line
+	4000 1550 4000 1250
+Connection ~ 4000 1250
+Wire Wire Line
+	4000 1250 4050 1250
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5FE975FE
+P 5900 1200
+F 0 "H1" H 6000 1246 50  0000 L CNN
+F 1 "MountingHole" H 6000 1155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5900 1200 50  0001 C CNN
+F 3 "~" H 5900 1200 50  0001 C CNN
+	1    5900 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5FE97C94
+P 5900 1450
+F 0 "H2" H 6000 1496 50  0000 L CNN
+F 1 "MountingHole" H 6000 1405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5900 1450 50  0001 C CNN
+F 3 "~" H 5900 1450 50  0001 C CNN
+	1    5900 1450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

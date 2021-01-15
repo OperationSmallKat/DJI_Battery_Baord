@@ -1,0 +1,162 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x10_Male J1
+U 1 1 5FE94445
+P 4350 1050
+F 0 "J1" V 4185 978 50  0000 C CNN
+F 1 "Conn_01x10_Male" V 4276 978 50  0000 C CNN
+F 2 "DJI_BATTERY_CONN:JST_EH_B10B-EH-A_1x10_P2.50mm_Vertical" H 4350 1050 50  0001 C CNN
+F 3 "~" H 4350 1050 50  0001 C CNN
+	1    4350 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J2
+U 1 1 5FE95C0C
+P 4350 2000
+F 0 "J2" V 4196 2048 50  0000 L CNN
+F 1 "Conn_01x02_Female" V 4287 2048 50  0000 L CNN
+F 2 "DJI_BATTERY_CONN:XT-30_female" H 4350 2000 50  0001 C CNN
+F 3 "~" H 4350 2000 50  0001 C CNN
+	1    4350 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5FE975FE
+P 5900 1200
+F 0 "H1" H 6000 1246 50  0000 L CNN
+F 1 "MountingHole" H 6000 1155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5900 1200 50  0001 C CNN
+F 3 "~" H 5900 1200 50  0001 C CNN
+	1    5900 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5FE97C94
+P 5900 1450
+F 0 "H2" H 6000 1496 50  0000 L CNN
+F 1 "MountingHole" H 6000 1405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5900 1450 50  0001 C CNN
+F 3 "~" H 5900 1450 50  0001 C CNN
+	1    5900 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 1250 4250 1250
+Connection ~ 4250 1250
+Wire Wire Line
+	4250 1250 4300 1250
+Connection ~ 4350 1250
+Wire Wire Line
+	4350 1250 4450 1250
+Wire Wire Line
+	4550 1250 4600 1250
+Wire Wire Line
+	3950 1250 4000 1250
+Wire Wire Line
+	3850 1250 3850 1350
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5FF74F52
+P 3850 1350
+F 0 "TP1" H 4100 1400 50  0000 R CNN
+F 1 "TestPoint" H 4250 1500 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4050 1350 50  0001 C CNN
+F 3 "~" H 4050 1350 50  0001 C CNN
+	1    3850 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5FF758C9
+P 4000 1250
+F 0 "#PWR0101" H 4000 1000 50  0001 C CNN
+F 1 "GND" H 4005 1077 50  0000 C CNN
+F 2 "" H 4000 1250 50  0001 C CNN
+F 3 "" H 4000 1250 50  0001 C CNN
+	1    4000 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4000 1250
+Wire Wire Line
+	4000 1250 4050 1250
+$Comp
+L power:GND #PWR0102
+U 1 1 5FF759DB
+P 4600 1250
+F 0 "#PWR0102" H 4600 1000 50  0001 C CNN
+F 1 "GND" H 4605 1077 50  0000 C CNN
+F 2 "" H 4600 1250 50  0001 C CNN
+F 3 "" H 4600 1250 50  0001 C CNN
+	1    4600 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4600 1250
+Wire Wire Line
+	4600 1250 4650 1250
+$Comp
+L power:+BATT #PWR0103
+U 1 1 5FF75F3B
+P 4300 1250
+F 0 "#PWR0103" H 4300 1100 50  0001 C CNN
+F 1 "+BATT" H 4315 1423 50  0000 C CNN
+F 2 "" H 4300 1250 50  0001 C CNN
+F 3 "" H 4300 1250 50  0001 C CNN
+	1    4300 1250
+	-1   0    0    1   
+$EndComp
+Connection ~ 4300 1250
+Wire Wire Line
+	4300 1250 4350 1250
+Wire Wire Line
+	4750 1250 4750 1350
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5FF76DD9
+P 4750 1350
+F 0 "TP2" H 4550 1350 50  0000 R CNN
+F 1 "TestPoint" H 4700 1450 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4950 1350 50  0001 C CNN
+F 3 "~" H 4950 1350 50  0001 C CNN
+	1    4750 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+BATT #PWR0104
+U 1 1 5FF78451
+P 4250 1800
+F 0 "#PWR0104" H 4250 1650 50  0001 C CNN
+F 1 "+BATT" H 4265 1973 50  0000 C CNN
+F 2 "" H 4250 1800 50  0001 C CNN
+F 3 "" H 4250 1800 50  0001 C CNN
+	1    4250 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5FF78927
+P 4350 1800
+F 0 "#PWR0105" H 4350 1550 50  0001 C CNN
+F 1 "GND" H 4355 1627 50  0000 C CNN
+F 2 "" H 4350 1800 50  0001 C CNN
+F 3 "" H 4350 1800 50  0001 C CNN
+	1    4350 1800
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
