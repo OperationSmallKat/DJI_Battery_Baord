@@ -1,1 +1,2 @@
-# DJI_Battery_Baord
+# DJI_Battery_Board
+![assembled pcb](bat-pcb.jpg)
